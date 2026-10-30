@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/projects', require('./routes/projects'));
+app.use('/', require('./routes/insights'));
 app.use('/', require('./routes/tasks'));
 app.use('/', require('./routes/notes'));
 app.use('/prompts', require('./routes/prompts'));
