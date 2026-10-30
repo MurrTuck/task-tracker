@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
 
 app.use('/projects', require('./routes/projects'));
 app.use('/', require('./routes/tasks'));
+app.use('/', require('./routes/notes'));
 
 app.listen(PORT, () => {
   console.log(`API running at http://localhost:${PORT}`);
